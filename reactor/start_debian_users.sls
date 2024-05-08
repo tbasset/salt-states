@@ -1,8 +1,8 @@
 # highstate to run when minions start
-# os:Raspbian
-highstate_raspbian_packages:
+# os:Debian
+highstate_Debian_users:
   local.state.apply:
-    - tgt: 'os:Raspbian'
+    - tgt: 'os:Debian'
     - tgt_type: grain
     - arg:
-      - packages
+      - users
